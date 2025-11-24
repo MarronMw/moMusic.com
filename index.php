@@ -74,7 +74,7 @@ include './utils/auth.php';
                                 <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full ml-2">ARTIST</span>
                             <?php endif; ?>
                         </span>
-                        <a href="dashboard.php" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition duration-300">
+                        <a href="users/dashboard.php" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition duration-300">
                             Dashboard
                         </a>
                     <?php else: ?>
