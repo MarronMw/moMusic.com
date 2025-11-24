@@ -78,7 +78,7 @@ include './utils/auth.php';
                             Dashboard
                         </a>
                     <?php else: ?>
-                        <a href="login.php" class="text-gray-700 hover:text-primary text-sm font-medium transition duration-300">
+                        <a href="users/login.php" class="text-gray-700 hover:text-primary text-sm font-medium transition duration-300">
                             Sign In
                         </a>
                         <a href="register.php" class="bg-primary text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition duration-300">
