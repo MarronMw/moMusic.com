@@ -299,7 +299,7 @@ include './utils/auth.php';
                                 Listen
                             </a>
                         <?php else: ?>
-                            <a href="login.php" 
+                            <a href="users/login.php" 
                                class="bg-gray-200 text-gray-700 px-6 py-2 rounded-lg hover:bg-gray-300 transition duration-300 font-medium">
                                 Sign In
                             </a>
