@@ -1,5 +1,4 @@
 <?php
-include './utils/config.php';
 include './utils/auth.php';
 ?>
 <!DOCTYPE html>

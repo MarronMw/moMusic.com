@@ -1,6 +1,5 @@
 <?php
-include 'config.php';
-include 'auth.php';
+include './../utils/auth.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

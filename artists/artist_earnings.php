@@ -1,6 +1,5 @@
 <?php
-include 'config.php';
-include 'auth.php';
+include './../utils/auth.php';
 
 if (!$auth->isLoggedIn() || !$artistAuth->isArtist()) {
     header("Location: login.php");
