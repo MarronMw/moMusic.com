@@ -435,7 +435,7 @@ include './utils/auth.php';
                     <a href="register.php" class="bg-white text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
                         Create Free Account
                     </a>
-                    <a href="artist/register.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
+                    <a href="artists/artist_registration.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
                         Start as Artist
                     </a>
                 <?php else: ?>
@@ -443,7 +443,7 @@ include './utils/auth.php';
                         Discover Music
                     </a>
                     <?php if (!$artistAuth->isArtist()): ?>
-                        <a href="artist/register.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
+                        <a href="artists/artist_registration.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300">
                             Become an Artist
                         </a>
                     <?php endif; ?>
@@ -476,9 +476,9 @@ include './utils/auth.php';
                 <div>
                     <h4 class="text-lg font-semibold mb-4">For Artists</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="artist/register.php" class="hover:text-white transition duration-300">Artist Signup</a></li>
-                        <li><a href="artist/plans.php" class="hover:text-white transition duration-300">Artist Plans</a></li>
-                        <li><a href="artist/upload.php" class="hover:text-white transition duration-300">Upload Music</a></li>
+                        <li><a href="artists/artist_registration.php" class="hover:text-white transition duration-300">Artist Signup</a></li>
+                        <li><a href="artists/artist_plan.php" class="hover:text-white transition duration-300">Artist Plans</a></li>
+                        <li><a href="artists/artist_upload.php" class="hover:text-white transition duration-300">Upload Music</a></li>
                     </ul>
                 </div>
                 <div>
