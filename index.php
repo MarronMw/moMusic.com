@@ -111,7 +111,7 @@ include './utils/auth.php';
                             <a href="register.php" class="bg-white text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg text-center">
                                 Start Listening Free
                             </a>
-                            <a href="artist/register.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300 text-center">
+                            <a href="artists/artist_registration.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300 text-center">
                                 Become an Artist
                             </a>
                         <?php else: ?>
@@ -119,11 +119,11 @@ include './utils/auth.php';
                                 Browse Music
                             </a>
                             <?php if (!$artistAuth->isArtist()): ?>
-                                <a href="artist/register.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300 text-center">
+                                <a href="artists/artist_registration.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300 text-center">
                                     Start Uploading
                                 </a>
                             <?php else: ?>
-                                <a href="artist/dashboard.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300 text-center">
+                                <a href="artists/artist_dashboard.php" class="border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-primary transition duration-300 text-center">
                                     Artist Dashboard
                                 </a>
                             <?php endif; ?>
