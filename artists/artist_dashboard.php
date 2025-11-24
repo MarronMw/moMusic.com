@@ -2,7 +2,7 @@
 include './../utils/auth.php';
 
 if (!$auth->isLoggedIn() || !$artistAuth->isArtist()) {
-    header("Location: login.php");
+    header("Location: artist_login.php");
     exit();
 }
 
