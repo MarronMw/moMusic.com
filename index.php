@@ -166,7 +166,7 @@ include './utils/auth.php';
     <section id="features" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose MusicStream?</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose moMusic?</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     We've built the perfect platform for music lovers and creators alike
                 </p>
@@ -429,7 +429,7 @@ include './utils/auth.php';
         <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-bold mb-6">Ready to Start Your Musical Journey?</h2>
             <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                Join millions of music lovers and creators who are already using MusicStream to discover, share, and monetize their passion for music.
+                Join millions of music lovers and creators who are already using moMusic to discover, share, and monetize their passion for music.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <?php if (!$auth->isLoggedIn()): ?>
@@ -460,7 +460,7 @@ include './utils/auth.php';
                 <div>
                     <div class="flex items-center mb-4">
                         <i class="fas fa-music text-2xl text-primary mr-2"></i>
-                        <span class="text-xl font-bold">MusicStream</span>
+                        <span class="text-xl font-bold">moMusic</span>
                     </div>
                     <p class="text-gray-400">
                         The ultimate platform for music lovers and creators to connect, share, and earn.
@@ -492,7 +492,7 @@ include './utils/auth.php';
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 MusicStream. All rights reserved.</p>
+                <p>&copy; 2024 moMusic. All rights reserved.</p>
             </div>
         </div>
     </footer>
