@@ -2,7 +2,7 @@
 include './../utils/auth.php';
 
 if ($auth->isLoggedIn() && $artistAuth->isArtist()) {
-    header("Location: dashboard.php");
+    header("Location: artist_dashboard.php");
     exit();
 }
 
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     if ($auth->login($email, $password)) {
         if ($artistAuth->isArtist()) {
-            header("Location: dashboard.php");
+            header("Location: artist_dashboard.php");
             exit();
         } else {
             $error = "This account is not registered as an artist!";
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist Login - MusicStream</title>
+    <title>Artist Login - moMusic</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="text-center mb-8">
             <a href="../index.php" class="inline-flex items-center text-2xl font-bold text-gray-900">
                 <i class="fas fa-music text-purple-600 mr-2"></i>
-                MusicStream
+                moMusic
             </a>
             <div class="mt-4">
                 <span class="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-purple-100 text-purple-800">

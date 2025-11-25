@@ -152,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </p>
             <p class="text-gray-600 mt-2">
                 Are you an artist?
-                <a href="artist/login.php" class="text-purple-600 hover:text-purple-500 font-semibold ml-1">
+                <a href="./../artists/artist_login.php" class="text-purple-600 hover:text-purple-500 font-semibold ml-1">
                     Artist Login
                 </a>
             </p>

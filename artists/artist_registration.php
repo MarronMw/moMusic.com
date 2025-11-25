@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user_id = $conn->insert_id;
         if ($artistAuth->registerArtist($user_id, $artist_name, $bio)) {
             $auth->login($email, $password);
-            header("Location: artist-dashboard.php");
+            header("Location: artist_dashboard.php");
             exit();
         }
     }
