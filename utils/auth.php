@@ -120,8 +120,21 @@ class ArtistAuth extends Auth {
         return $result->num_rows > 0;
     }
     
-    public function isArtist() {
-        return isset($_SESSION['role']) && $_SESSION['role'] === 'artist';
+       public function isArtist() {
+        if (!$this->isLoggedIn()) {
+            return false;
+        }
+        
+        // Check database directly to ensure accuracy
+        return $this->checkArtistInDatabase($_SESSION['user_id']);
+    }
+    
+    private function checkArtistInDatabase($user_id) {
+        $stmt = $this->conn->prepare("SELECT id FROM artists WHERE user_id = ?");
+        $stmt->bind_param("i", $user_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        return $result->num_rows > 0;
     }
     
     public function getArtistId() {

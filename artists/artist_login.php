@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         } else {
             $error = "This account is not registered as an artist!";
-            $auth->logout();
+            // $auth->logout();
         }
     } else {
         $error = "Invalid email or password!";
